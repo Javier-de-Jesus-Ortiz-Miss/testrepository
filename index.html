@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificar Invitaciones</title>
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<body>
+  <h1>Verificación de Invitaciones</h1>
+
+  <div class="form-container">
+    <input type="text" id="phone-input" placeholder="Ingresa tu número de teléfono">
+    <button onclick="verificarNumero()">Verificar</button>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <div id="confirmacion-container" class="confirmacion hidden">
+    <label for="cantidad">Selecciona cuántas personas asistirán:</label>
+    <select id="cantidad"></select>
+    <button onclick="confirmarAsistencia()">Confirmar</button>
+  </div>
+
+  <div id="mensaje-final" class="resultado"></div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
